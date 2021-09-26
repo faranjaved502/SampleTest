@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/usersFragment">
+
+    <fragment
+        android:id="@+id/usersFragment"
+        android:name="com.servian.sampletest.ui.fragments.UsersFragment"
+        android:label="@string/user_info"
+        tools:layout="@layout/fragment_users" >
+        <action
+            android:id="@+id/action_usersFragment_to_albumListFragment"
+            app:destination="@id/albumListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/albumListFragment"
+        android:name="com.servian.sampletest.ui.fragments.AlbumListFragment"
+        android:label="@string/album_info" >
+
+        <argument
+            android:name="userId"
+            app:argType="integer"
+            android:defaultValue="0"
+            app:nullable="false"/>
+        <action
+            android:id="@+id/action_albumListFragment_to_albumDetailFragment"
+            app:destination="@id/albumDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/albumDetailFragment"
+        android:name="com.servian.sampletest.ui.fragments.AlbumDetailFragment"
+        android:label="@string/album"
+        tools:layout="@layout/fragment_album_detail">
+
+        <argument
+            android:name="albumModel"
+            android:defaultValue="@null"
+            app:argType="com.servian.sampletest.model.Album"
+            app:nullable="true" />
+    </fragment>
+</navigation>

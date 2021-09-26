@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="user"
+            type="com.servian.sampletest.model.User" />
+    </data>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue"
+        android:orientation="vertical"
+        android:padding="@dimen/general_padding"
+        android:layout_marginBottom="@dimen/dimens_10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text= "@{@string/name(user.name)}"
+                android:textColor="@color/white"
+                android:textSize="@dimen/letter_small" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimens_10"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text= "@{@string/email(user.email)}"
+                android:textColor="@color/white"
+                android:textSize="@dimen/letter_small" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimens_10"
+
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text= "@{@string/phone(user.phone)}"
+                android:textColor="@color/white"
+                android:textSize="@dimen/letter_small" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</layout>

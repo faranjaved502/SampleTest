@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Sample Test</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="user_info">User Info</string>
+    <string name="name">Name: %s</string>
+    <string name="email">Email: %s</string>
+    <string name="phone">Phone: %s</string>
+    <string name="photo_id">Photo ID: %s</string>
+    <string name="album_id">Album ID: %s</string>
+    <string name="album_info">Album Info</string>
+    <string name="album">Album</string>
+    <string name="failure_error">Something went wrong.Please try again!!</string>
+</resources>

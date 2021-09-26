@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bind="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="album"
+            type="com.servian.sampletest.model.Album" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue"
+        android:orientation="horizontal"
+        android:padding="@dimen/general_padding"
+        android:layout_marginBottom="@dimen/dimens_10">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="@dimen/thumbnail_size"
+            android:layout_height="@dimen/thumbnail_size"
+            bind:image_url="@{album.thumbnailUrl}"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/image"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/dimens_10"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text= "@{album.title}"
+            android:textColor="@color/white"
+            android:textSize="@dimen/letter_small" />
+
+    </RelativeLayout>
+</layout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="general_padding">16dp</dimen>
+    <dimen name="dimens_10">10dp</dimen>
+    <dimen name="thumbnail_size">100dp</dimen>
+    <dimen name="letter_xSmall">12sp</dimen>
+    <dimen name="letter_small">14sp</dimen>
+    <dimen name="letter_medium">16sp</dimen>
+    <dimen name="letter_large">18sp</dimen>
+    <dimen name="letter_xLarge">22sp</dimen>
+
+</resources>
